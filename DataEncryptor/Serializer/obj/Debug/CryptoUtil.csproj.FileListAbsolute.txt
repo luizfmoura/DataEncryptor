@@ -1,0 +1,13 @@
+P:\Visual Studio 2012\Projects\EncryptedKeys\Serializer\bin\Debug\Serializer.dll
+P:\Visual Studio 2012\Projects\EncryptedKeys\Serializer\bin\Debug\Serializer.pdb
+P:\Visual Studio 2012\Projects\EncryptedKeys\Serializer\obj\Debug\DataEncryptor.Resources.resources
+P:\Visual Studio 2012\Projects\EncryptedKeys\Serializer\obj\Debug\CryptoUtil.csproj.GenerateResource.Cache
+P:\Visual Studio 2012\Projects\EncryptedKeys\Serializer\obj\Debug\Serializer.dll
+P:\Visual Studio 2012\Projects\EncryptedKeys\Serializer\obj\Debug\Serializer.pdb
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\bin\Debug\Serializer.dll
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\bin\Debug\Serializer.pdb
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\CryptoUtil.csprojResolveAssemblyReference.cache
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\DataEncryptor.Resources.resources
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\CryptoUtil.csproj.GenerateResource.Cache
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\Serializer.dll
+P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\Serializer.pdb

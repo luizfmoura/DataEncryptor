@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEncryptor", "DataEncryptor\DataEncryptor.csproj", "{A50400F1-6D6F-41F7-AD78-19DEB70A98F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoUtil", "Serializer\CryptoUtil.csproj", "{706C557F-5FA8-4AE2-9D1C-66B0E04125DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{D5C5C5D4-BFA0-458D-88C2-78E3480E410A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A50400F1-6D6F-41F7-AD78-19DEB70A98F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50400F1-6D6F-41F7-AD78-19DEB70A98F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50400F1-6D6F-41F7-AD78-19DEB70A98F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50400F1-6D6F-41F7-AD78-19DEB70A98F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706C557F-5FA8-4AE2-9D1C-66B0E04125DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706C557F-5FA8-4AE2-9D1C-66B0E04125DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706C557F-5FA8-4AE2-9D1C-66B0E04125DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706C557F-5FA8-4AE2-9D1C-66B0E04125DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C5C5D4-BFA0-458D-88C2-78E3480E410A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C5C5D4-BFA0-458D-88C2-78E3480E410A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C5C5D4-BFA0-458D-88C2-78E3480E410A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C5C5D4-BFA0-458D-88C2-78E3480E410A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

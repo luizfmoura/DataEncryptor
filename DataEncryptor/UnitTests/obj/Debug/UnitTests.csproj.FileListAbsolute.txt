@@ -1,0 +1,14 @@
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\bin\Debug\UnitTests.dll
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\bin\Debug\UnitTests.pdb
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\bin\Debug\Serializer.dll
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\bin\Debug\Serializer.pdb
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\obj\Debug\UnitTests.dll
+P:\Visual Studio 2012\Projects\EncryptedKeys\UnitTests\obj\Debug\UnitTests.pdb
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\bin\Debug\UnitTests.dll
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\bin\Debug\UnitTests.pdb
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\bin\Debug\Serializer.dll
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\bin\Debug\Serializer.pdb
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\obj\Debug\UnitTests.dll
+P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\obj\Debug\UnitTests.pdb
