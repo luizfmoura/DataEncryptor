@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DataEncryptor.exe" version="1.0.0.0" publicKeyToken="b8a00b498815b222" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DataEncryptor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DataEncryptor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataEncryptor.exe" size="147968">
+      <assemblyIdentity name="DataEncryptor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xBHS63xHYsDyXms1KM/cuoI5gFRCpB5RJuL0msErllg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Serializer.dll" size="9728">
+      <assemblyIdentity name="Serializer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MrniKRLU3xN1oKyvnmZLVb2grXc5TVBXxnUk+855+4w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DataEncryptor.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=MOURA-ULTRABOOK\Luiz" issuerKeyHash="abbed2428028609f4c0167b354dd275bba0a08dd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7I4pRMigTlc/qkD5inXfkWUytBEmGoBOZmK7YxQt/jc=</DigestValue></Reference></SignedInfo><SignatureValue>w99O0SLMAWYb4XIVT4txaZx/oPi9QvXvjFq1Yv4htUQyxMQ23DF3RLtQyROnM8ZwjPu7w0knbluGN8N97OyxRWEqKtaKcJtwy+j0YjVxsKUJZjvaH5qPg1TABaRVU3vRAtcI2Gb4cwecTBPYmdDofo7sxGf0e4rIvn8/2hRTDsY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xpuD255ZRbd69Rwyst7QU1Yzc4+dOQtAZcKAtHEf/1a5hBB0VXvKX6IaOpHihApzTAEC6NycCrKnMB2sNFtPZs7FD9WslvGDxI5VOCsQJ6c8KRInaUvJucGxb2XE4wApHJr6tlPtPc7C2P9OkA1MSo5H7HtnjrhGWTdE4+OCKps=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="37fe2d1463bb62664e801a2611b4326591df758af940aa3f574ea0c844298eec" Description="" Url=""><as:assemblyIdentity name="DataEncryptor.exe" version="1.0.0.0" publicKeyToken="b8a00b498815b222" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MOURA-ULTRABOOK\Luiz</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C3ff0e70Wm36eZokMl73wMWq9XhXA7nT5vAinRh/sNo=</DigestValue></Reference></SignedInfo><SignatureValue>MWExqzJQNOO4VKGm3xrZyMdC7m6M7cZJJCH/9stS+L5kE+i+OxhebQajcDmTqa6eFn9DueGZlq+l8ASHVAdBEDAHuX9zDdGvimJdXvbGlrS+ayRuqPwbKZrDVkv7M6nqVrQHMo/O5TDsut66GlQO07RBWN7s+vebVMQsmHCjBnY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xpuD255ZRbd69Rwyst7QU1Yzc4+dOQtAZcKAtHEf/1a5hBB0VXvKX6IaOpHihApzTAEC6NycCrKnMB2sNFtPZs7FD9WslvGDxI5VOCsQJ6c8KRInaUvJucGxb2XE4wApHJr6tlPtPc7C2P9OkA1MSo5H7HtnjrhGWTdE4+OCKps=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQe7Yx2HKqUIhKdDK9NaB2zTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigATQBPAFUAUgBBAC0AVQBMAFQAUgBBAEIATwBPAEsAXABMAHUAaQB6MB4XDTEzMDEyOTIyMDcxOVoXDTE0MDEzMDA0MDcxOVowMzExMC8GA1UEAx4oAE0ATwBVAFIAQQAtAFUATABUAFIAQQBCAE8ATwBLAFwATAB1AGkAejCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxpuD255ZRbd69Rwyst7QU1Yzc4+dOQtAZcKAtHEf/1a5hBB0VXvKX6IaOpHihApzTAEC6NycCrKnMB2sNFtPZs7FD9WslvGDxI5VOCsQJ6c8KRInaUvJucGxb2XE4wApHJr6tlPtPc7C2P9OkA1MSo5H7HtnjrhGWTdE4+OCKpsCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBKqOdUXQ32opNCL7Cyzs5mX8Wo6UtwmIM533mhD3loT83a716Sg+3J35R7g4TSbdBMFM6PSIya5utumKQrWrdmTvUoVyUha89NTBztLHTgtmX1LMzGawmAiRaTjb5Ey/0yUL6x+P4FNe1kw/Zi22cBA8ZmrvVVZGpkmBzQlZMHKQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

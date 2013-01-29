@@ -15,8 +15,8 @@ namespace UnitTests
         {
             var key1 = new CryptoKey("1234567890123456789012345678901234567890");
 
-            Assert.AreEqual(24, key1.KeyBytes.Length);
-            Assert.AreEqual(8, key1.IVBytes.Length);
+            Assert.AreEqual(32, key1.KeyBytes.Length);
+            Assert.AreEqual(16, key1.IVBytes.Length);
         }
 
         [TestMethod]

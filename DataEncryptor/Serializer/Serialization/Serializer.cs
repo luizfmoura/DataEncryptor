@@ -14,12 +14,12 @@ namespace DataEncryptor.Serialization
 
             try
             {
-                using (var triploDesProvider = new TripleDESCryptoServiceProvider())
+                using (var aesProvider = new AesCryptoServiceProvider())
                 {
-                    triploDesProvider.Key = key.KeyBytes;
-                    triploDesProvider.IV = key.IVBytes;
+                    aesProvider.Key = key.KeyBytes;
+                    aesProvider.IV = key.IVBytes;
 
-                    var encryptor = triploDesProvider.CreateEncryptor(triploDesProvider.Key, triploDesProvider.IV);
+                    var encryptor = aesProvider.CreateEncryptor(aesProvider.Key, aesProvider.IV);
 
                     using (var stream = new FileStream(fileFullName, FileMode.Create))
                     using (var cryptoStream = new CryptoStream(stream, encryptor, CryptoStreamMode.Write))
@@ -46,12 +46,12 @@ namespace DataEncryptor.Serialization
 
             try
             {
-                using (var triploDesProvider = new TripleDESCryptoServiceProvider())
+                using (var aesProvider = new AesCryptoServiceProvider())
                 {
-                    triploDesProvider.Key = key.KeyBytes;
-                    triploDesProvider.IV = key.IVBytes;
+                    aesProvider.Key = key.KeyBytes;
+                    aesProvider.IV = key.IVBytes;
 
-                    var decryptor = triploDesProvider.CreateDecryptor(triploDesProvider.Key, triploDesProvider.IV);
+                    var decryptor = aesProvider.CreateDecryptor(aesProvider.Key, aesProvider.IV);
 
                     using (var stream = new FileStream(fileFullName, FileMode.Open))
                     using (var cryptoStream = new CryptoStream(stream, decryptor, CryptoStreamMode.Read))

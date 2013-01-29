@@ -1,36 +1,26 @@
 ﻿using System;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace DataEncryptor.Serialization
 {
     public class CryptoKey
     {
         private const int Iterations = 1000;
-        private const int PasswordLength = 24;
+        private const int PasswordLength = 32;
+        private const int IVLength = 16;
 
         public byte[] KeyBytes { get; private set; }
 
-        public byte[] IVBytes
-        {
-            get
-            {
-                return new byte[] { 15, 199, 56, 77, 244, 126, 107, 239 };
-            }
-        }
+        public byte[] IVBytes { get; private set; }
 
-        public byte[] SaltBytes
-        {
-            get
-            {
-                return new byte[] { 124, 57, 98, 77, 43, 21, 76, 13 };
-            }
-        }
+        public byte[] SaltBytes { get; private set; }
 
-        private byte[] DeriveBytes(string password)
+        private byte[] DeriveBytes(string password, byte[] salt, int length)
         {
-            using (var rfc = new Rfc2898DeriveBytes(password, SaltBytes, 1000))
+            using (var rfc = new Rfc2898DeriveBytes(password, salt, 1000))
             {
-                return rfc.GetBytes(PasswordLength);
+                return rfc.GetBytes(length);
             }
         }
 
@@ -40,7 +30,9 @@ namespace DataEncryptor.Serialization
             {
                 throw new ArgumentException(Resources.CryptographyKeyNull);
             }
-            this.KeyBytes = DeriveBytes(key);
+            var keyBytes = Encoding.UTF8.GetBytes(key.PadRight(8, '\0'));
+            this.KeyBytes = DeriveBytes(key, salt: keyBytes, length: PasswordLength);
+            this.IVBytes = DeriveBytes(key, salt: keyBytes, length: IVLength);
         }
     }
 }

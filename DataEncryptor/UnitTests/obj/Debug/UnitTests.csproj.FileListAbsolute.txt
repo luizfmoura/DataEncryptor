@@ -12,3 +12,10 @@ P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\bin\Debug\Serializer.pdb
 P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\obj\Debug\UnitTests.dll
 P:\Visual Studio 2012\Projects\DataEncryptor\UnitTests\obj\Debug\UnitTests.pdb
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Debug\UnitTests.dll
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Debug\UnitTests.pdb
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Debug\Serializer.dll
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Debug\Serializer.pdb
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\obj\Debug\UnitTests.dll
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\obj\Debug\UnitTests.pdb

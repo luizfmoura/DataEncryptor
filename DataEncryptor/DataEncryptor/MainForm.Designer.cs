@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,19 +46,9 @@
             this.textBoxKey = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxFileName = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonAddEntry = new System.Windows.Forms.Button();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonRemoveEntry = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEntry)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip2
@@ -66,7 +57,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(818, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(654, 24);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -88,7 +79,7 @@
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -96,7 +87,7 @@
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -104,33 +95,33 @@
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeToolStripMenuItem.Text = "Close ";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -142,7 +133,7 @@
             this.dataGridViewEntry.Location = new System.Drawing.Point(12, 135);
             this.dataGridViewEntry.MultiSelect = false;
             this.dataGridViewEntry.Name = "dataGridViewEntry";
-            this.dataGridViewEntry.Size = new System.Drawing.Size(595, 322);
+            this.dataGridViewEntry.Size = new System.Drawing.Size(626, 322);
             this.dataGridViewEntry.TabIndex = 2;
             // 
             // labelFileName
@@ -163,7 +154,7 @@
             this.groupBox1.Controls.Add(this.labelFileName);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(792, 102);
+            this.groupBox1.Size = new System.Drawing.Size(626, 102);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details:";
@@ -171,7 +162,8 @@
             // decryptButton
             // 
             this.decryptButton.Enabled = false;
-            this.decryptButton.Location = new System.Drawing.Point(609, 25);
+            this.decryptButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.decryptButton.Location = new System.Drawing.Point(443, 25);
             this.decryptButton.Name = "decryptButton";
             this.decryptButton.Size = new System.Drawing.Size(171, 59);
             this.decryptButton.TabIndex = 9;
@@ -185,7 +177,7 @@
             this.textBoxKey.MaxLength = 32;
             this.textBoxKey.Name = "textBoxKey";
             this.textBoxKey.ReadOnly = true;
-            this.textBoxKey.Size = new System.Drawing.Size(497, 20);
+            this.textBoxKey.Size = new System.Drawing.Size(339, 20);
             this.textBoxKey.TabIndex = 6;
             this.textBoxKey.UseSystemPasswordChar = true;
             // 
@@ -203,106 +195,18 @@
             this.textBoxFileName.Location = new System.Drawing.Point(39, 25);
             this.textBoxFileName.Name = "textBoxFileName";
             this.textBoxFileName.ReadOnly = true;
-            this.textBoxFileName.Size = new System.Drawing.Size(556, 20);
+            this.textBoxFileName.Size = new System.Drawing.Size(398, 20);
             this.textBoxFileName.TabIndex = 4;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.buttonAddEntry);
-            this.groupBox2.Controls.Add(this.textBoxPassword);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBoxUser);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBoxDescription);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(627, 135);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(171, 220);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "New Entry";
-            // 
-            // buttonAddEntry
-            // 
-            this.buttonAddEntry.Location = new System.Drawing.Point(9, 175);
-            this.buttonAddEntry.Name = "buttonAddEntry";
-            this.buttonAddEntry.Size = new System.Drawing.Size(156, 33);
-            this.buttonAddEntry.TabIndex = 6;
-            this.buttonAddEntry.Text = "Add";
-            this.buttonAddEntry.UseVisualStyleBackColor = true;
-            this.buttonAddEntry.Click += new System.EventHandler(this.buttonAddEntry_Click);
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(9, 136);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.ReadOnly = true;
-            this.textBoxPassword.Size = new System.Drawing.Size(156, 20);
-            this.textBoxPassword.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 120);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Password";
-            // 
-            // textBoxUser
-            // 
-            this.textBoxUser.Location = new System.Drawing.Point(9, 87);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.ReadOnly = true;
-            this.textBoxUser.Size = new System.Drawing.Size(156, 20);
-            this.textBoxUser.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "User:";
-            // 
-            // textBoxDescription
-            // 
-            this.textBoxDescription.Location = new System.Drawing.Point(9, 43);
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.ReadOnly = true;
-            this.textBoxDescription.Size = new System.Drawing.Size(156, 20);
-            this.textBoxDescription.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Description:";
-            // 
-            // buttonRemoveEntry
-            // 
-            this.buttonRemoveEntry.Location = new System.Drawing.Point(636, 426);
-            this.buttonRemoveEntry.Name = "buttonRemoveEntry";
-            this.buttonRemoveEntry.Size = new System.Drawing.Size(156, 31);
-            this.buttonRemoveEntry.TabIndex = 6;
-            this.buttonRemoveEntry.Text = "Remove";
-            this.buttonRemoveEntry.UseVisualStyleBackColor = true;
-            this.buttonRemoveEntry.Click += new System.EventHandler(this.buttonRemoveEntry_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 468);
-            this.Controls.Add(this.buttonRemoveEntry);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(654, 468);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewEntry);
             this.Controls.Add(this.menuStrip2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "DataEncryptor";
             this.menuStrip2.ResumeLayout(false);
@@ -310,8 +214,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEntry)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,15 +237,6 @@
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxUser;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonAddEntry;
-        private System.Windows.Forms.Button buttonRemoveEntry;
     }
 }
 

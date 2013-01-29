@@ -22,3 +22,20 @@ P:\Visual Studio 2012\Projects\DataEncryptor\DataEncryptor\obj\Debug\DataEncrypt
 P:\Visual Studio 2012\Projects\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.Properties.Resources.resources
 P:\Visual Studio 2012\Projects\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.Resources.resources
 P:\Visual Studio 2012\Projects\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.csproj.GenerateResource.Cache
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\DataEncryptor.exe.config
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.exe
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.pdb
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\DataEncryptor.exe
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\DataEncryptor.pdb
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\Serializer.dll
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\Serializer.pdb
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.csprojResolveAssemblyReference.cache
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.MainForm.resources
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.Properties.Resources.resources
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.Resources.resources
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.csproj.GenerateResource.Cache
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\DataEncryptor.exe.manifest
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Debug\DataEncryptor.application
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.TrustInfo.xml
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.exe.manifest
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Debug\DataEncryptor.application
