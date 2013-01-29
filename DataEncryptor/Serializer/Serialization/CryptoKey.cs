@@ -1,40 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace DataEncryptor.Serialization
 {
     public class CryptoKey
     {
-        private string Key;
-        private string IV;
-        
-        public byte[] KeyBytes
-        {
-            get
-            {
-                return Encoding.UTF8.GetBytes(Key);
-            }
-        }
+        private const int Iterations = 1000;
+        private const int PasswordLength = 24;
+
+        public byte[] KeyBytes { get; private set; }
 
         public byte[] IVBytes
         {
             get
             {
-                return Encoding.UTF8.GetBytes(IV);
+                return new byte[] { 15, 199, 56, 77, 244, 126, 107, 239 };
             }
         }
 
-        public CryptoKey(string key, string iv)
+        public byte[] SaltBytes
         {
-            if (string.IsNullOrEmpty(key) || string.IsNullOrEmpty(iv))
+            get
+            {
+                return new byte[] { 124, 57, 98, 77, 43, 21, 76, 13 };
+            }
+        }
+
+        private byte[] DeriveBytes(string password)
+        {
+            using (var rfc = new Rfc2898DeriveBytes(password, SaltBytes, 1000))
+            {
+                return rfc.GetBytes(PasswordLength);
+            }
+        }
+
+        public CryptoKey(string key)
+        {
+            if (string.IsNullOrEmpty(key))
             {
                 throw new ArgumentException(Resources.CryptographyKeyNull);
             }
-            this.Key = key.PadRight(32, '\0').Substring(0, 32);
-            this.IV = iv.PadRight(16, '\0').Substring(0, 16);
+            this.KeyBytes = DeriveBytes(key);
         }
     }
 }

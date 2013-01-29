@@ -13,16 +13,16 @@ namespace UnitTests
         [TestMethod]
         public void TestCryptoKey()
         {
-            var key1 = new CryptoKey("1234567890123456789012345678901234567890", "teste");
+            var key1 = new CryptoKey("1234567890123456789012345678901234567890");
 
-            Assert.AreEqual(32, key1.KeyBytes.Length);
-            Assert.AreEqual(16, key1.IVBytes.Length);
+            Assert.AreEqual(24, key1.KeyBytes.Length);
+            Assert.AreEqual(8, key1.IVBytes.Length);
         }
 
         [TestMethod]
         public void TestSerializer()
         {
-            var key = new CryptoKey("123mudar", "mudar321");
+            var key = new CryptoKey("123mudar");
             var obj = new Entry("Megaupload", "luiz22", "vascao123");
             var fileName = "file.dat";
 
@@ -30,7 +30,9 @@ namespace UnitTests
 
             Assert.IsTrue(File.Exists(fileName));
 
-            var obj2 = Serializer.DeserializeFromFile<Entry>(fileName, key);
+            var key2 = new CryptoKey("123mudar");
+
+            var obj2 = Serializer.DeserializeFromFile<Entry>(fileName, key2);
 
             Assert.IsNotNull(obj);
             Assert.AreEqual("Megaupload", obj.Description);
@@ -41,7 +43,7 @@ namespace UnitTests
         [TestMethod]
         public void TestSerializerListOfObjects()
         {
-            var key = new CryptoKey("123mudar", "mudar321");
+            var key = new CryptoKey("123mudar");
             var listObj = new List<Entry>() { 
                 new Entry("Megaupload", "luiz22", "vascao123"),
                 new Entry("Yahoo", "luiz324", "dsafd"),
@@ -56,7 +58,10 @@ namespace UnitTests
 
             Assert.IsTrue(File.Exists(fileName));
 
-            var listObj2 = Serializer.DeserializeFromFile<List<Entry>>(fileName, key);
+
+            var key2 = new CryptoKey("123mudar");
+
+            var listObj2 = Serializer.DeserializeFromFile<List<Entry>>(fileName, key2);
 
             Assert.IsNotNull(listObj2);
             Assert.AreEqual(4, listObj2.Count);

@@ -1,12 +1,7 @@
-﻿using DataEncryptor.Serialization;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataEncryptor.Serialization
 {
@@ -19,12 +14,12 @@ namespace DataEncryptor.Serialization
 
             try
             {
-                using (var aesProvider = new AesCryptoServiceProvider())
+                using (var triploDesProvider = new TripleDESCryptoServiceProvider())
                 {
-                    aesProvider.Key = key.KeyBytes;
-                    aesProvider.IV = key.IVBytes;
+                    triploDesProvider.Key = key.KeyBytes;
+                    triploDesProvider.IV = key.IVBytes;
 
-                    var encryptor = aesProvider.CreateEncryptor(aesProvider.Key, aesProvider.IV);
+                    var encryptor = triploDesProvider.CreateEncryptor(triploDesProvider.Key, triploDesProvider.IV);
 
                     using (var stream = new FileStream(fileFullName, FileMode.Create))
                     using (var cryptoStream = new CryptoStream(stream, encryptor, CryptoStreamMode.Write))
@@ -34,7 +29,7 @@ namespace DataEncryptor.Serialization
                     }
                 }
             }
-            catch (CryptographicException)
+            catch (CryptographicException ex)
             {
                 throw new ApplicationException(Resources.CryptographyError);
             }
@@ -51,12 +46,12 @@ namespace DataEncryptor.Serialization
 
             try
             {
-                using (var aesProvider = new AesCryptoServiceProvider())
+                using (var triploDesProvider = new TripleDESCryptoServiceProvider())
                 {
-                    aesProvider.Key = key.KeyBytes;
-                    aesProvider.IV = key.IVBytes;
+                    triploDesProvider.Key = key.KeyBytes;
+                    triploDesProvider.IV = key.IVBytes;
 
-                    var decryptor = aesProvider.CreateDecryptor(aesProvider.Key, aesProvider.IV);
+                    var decryptor = triploDesProvider.CreateDecryptor(triploDesProvider.Key, triploDesProvider.IV);
 
                     using (var stream = new FileStream(fileFullName, FileMode.Open))
                     using (var cryptoStream = new CryptoStream(stream, decryptor, CryptoStreamMode.Read))
@@ -66,7 +61,7 @@ namespace DataEncryptor.Serialization
                     }
                 }
             }
-            catch (CryptographicException)
+            catch (CryptographicException ex)
             {
                 throw new ApplicationException(Resources.CryptographyError);
             }

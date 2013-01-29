@@ -95,20 +95,28 @@ namespace DataEncryptor
         }
 
         private void buttonAddEntry_Click(object sender, EventArgs e)
-        {
-            var obj = new Entry(textBoxDescription.Text, textBoxUser.Text, textBoxPassword.Text);
-            entries.Add(obj);
-            UpdateGrid();
+        {            
+            AddEntry();
+            textBoxDescription.Text = string.Empty;
+            textBoxUser.Text = string.Empty;
+            textBoxPassword.Text = string.Empty;
         }
 
         private void buttonRemoveEntry_Click(object sender, EventArgs e)
         {
-            RemoveEntry();         
+            RemoveEntry();
         }
 
         #endregion
 
         #region Methods
+
+        private void AddEntry()
+        {
+            var obj = new Entry(textBoxDescription.Text, textBoxUser.Text, textBoxPassword.Text);
+            entries.Add(obj);
+            UpdateGrid();
+        }
 
         private void RemoveEntry()
         {
@@ -129,7 +137,7 @@ namespace DataEncryptor
 
         private void Decrypt()
         {
-            entries = LoadEntries(FileName, new CryptoKey(textBoxKey.Text, textBoxIV.Text));
+            entries = LoadEntries(FileName, new CryptoKey(textBoxKey.Text));
             dataGridViewEntry.DataSource = entries;
         }
 
@@ -168,10 +176,8 @@ namespace DataEncryptor
             entries = null;
             dataGridViewEntry.DataSource = null;
             textBoxKey.ReadOnly = true;
-            textBoxIV.ReadOnly = true;
             decryptButton.Enabled = false;
             textBoxKey.Text = string.Empty;
-            textBoxIV.Text = string.Empty;
             textBoxFileName.Text = Resources.NoFileSelected;
             textBoxDescription.ReadOnly = true;
             textBoxUser.ReadOnly = true;
@@ -187,13 +193,12 @@ namespace DataEncryptor
             textBoxFileName.Text = fileName;
             FileName = fileName;
             textBoxKey.ReadOnly = false;
-            textBoxIV.ReadOnly = false;
             decryptButton.Enabled = true;
         }
 
         private void SaveFile(string fileName)
         {
-            Serializer.SerializeToFile<List<Entry>>(fileName, entries, new CryptoKey(textBoxKey.Text, textBoxIV.Text));
+            Serializer.SerializeToFile<List<Entry>>(fileName, entries, new CryptoKey(textBoxKey.Text));
             FileName = fileName;
             textBoxFileName.Text = fileName;
         }
@@ -202,8 +207,7 @@ namespace DataEncryptor
         {
             entries = new List<Entry>();
             dataGridViewEntry.DataSource = entries;
-            textBoxKey.ReadOnly = false;
-            textBoxIV.ReadOnly = false;
+            textBoxKey.ReadOnly = false;            
             textBoxDescription.ReadOnly = false;
             textBoxUser.ReadOnly = false;
             textBoxPassword.ReadOnly = false;
