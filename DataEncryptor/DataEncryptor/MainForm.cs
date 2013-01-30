@@ -23,7 +23,7 @@ namespace DataEncryptor
         {
             InitializeComponent();
             textBoxFileName.Text = Resources.NoFileSelected;
-            this.Text = Assembly.GetExecutingAssembly().FullName;            
+            this.Text = Assembly.GetExecutingAssembly().FullName;
         }
 
         #region Events
@@ -55,7 +55,7 @@ namespace DataEncryptor
             try
             {
                 Decrypt();
-                decryptButton.Enabled = false;                
+                decryptButton.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -65,39 +65,67 @@ namespace DataEncryptor
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseFile();
+            try
+            {
+                CloseFile();
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+            }
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(FileName) && entries != null)
+            try
             {
-                SaveFile(FileName);
+                if (!string.IsNullOrEmpty(FileName) && entries != null)
+                {
+                    SaveFile(FileName);
+                }
+                else if (entries != null)
+                {
+                    SaveAs();
+                }
             }
-            else if (entries != null)
+            catch (Exception ex)
             {
-                SaveAs();
+                ShowException(ex);
             }
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveAs();
+            try
+            {
+                SaveAs();
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+            }
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseFile();
-            New();
+            try
+            {
+                CloseFile();
+                New();
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+            }
         }
 
         #endregion
 
-        #region Methods               
+        #region Methods
 
         private void Decrypt()
         {
-            LoadEntries(FileName, new CryptoKey(textBoxKey.Text));            
+            LoadEntries(FileName, new CryptoKey(textBoxKey.Text));
         }
 
         private void SaveAs()
@@ -121,29 +149,30 @@ namespace DataEncryptor
 
         private void ShowException(Exception ex)
         {
-            MessageBox.Show(ex.Message, Assembly.GetExecutingAssembly().FullName);
+            MessageBox.Show("Error: " + ex.Message, Assembly.GetExecutingAssembly().FullName);
         }
 
         private void LoadEntries(string fileName, CryptoKey crypto)
         {
             entries = Serializer.DeserializeFromFile<BindingList<Entry>>(fileName, crypto);
-            dataGridViewEntry.DataSource = entries;
+            dataGridViewEntry.DataSource = entries;            
         }
 
         private void CloseFile()
         {
-            //entries = null;
+            entries = null;
             dataGridViewEntry.DataSource = null;
             FileName = string.Empty;
             textBoxKey.ReadOnly = true;
             decryptButton.Enabled = false;
             textBoxKey.Text = string.Empty;
-            textBoxFileName.Text = Resources.NoFileSelected;            
+            textBoxFileName.Text = Resources.NoFileSelected;
         }
 
         private void OpenFile(string fileName)
         {
             entries = null;
+            dataGridViewEntry.DataSource = null;
             textBoxFileName.Text = fileName;
             FileName = fileName;
             textBoxKey.ReadOnly = false;
@@ -161,11 +190,9 @@ namespace DataEncryptor
         {
             entries = new BindingList<Entry>();
             dataGridViewEntry.DataSource = entries;
-            textBoxKey.ReadOnly = false;            
+            textBoxKey.ReadOnly = false;
         }
 
         #endregion
-
-
     }
 }

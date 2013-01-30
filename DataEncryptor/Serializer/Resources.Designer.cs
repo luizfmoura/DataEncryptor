@@ -61,7 +61,7 @@ namespace DataEncryptor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Either key or initialization vector are incorrect or file is invalid.
+        ///   Looks up a localized string similar to Either key is incorrect or file is invalid.
         /// </summary>
         internal static string CryptographyError {
             get {
@@ -70,7 +70,7 @@ namespace DataEncryptor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Key and IV cannot be null.
+        ///   Looks up a localized string similar to Key can not be null.
         /// </summary>
         internal static string CryptographyKeyNull {
             get {
@@ -79,7 +79,7 @@ namespace DataEncryptor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File info cannot be null.
+        ///   Looks up a localized string similar to File info can not be null.
         /// </summary>
         internal static string FileInfoNull {
             get {

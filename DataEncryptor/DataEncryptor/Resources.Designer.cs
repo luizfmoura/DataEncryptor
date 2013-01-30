@@ -61,15 +61,6 @@ namespace DataEncryptor {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DataEncryptor v1.0.
-        /// </summary>
-        internal static string AppName {
-            get {
-                return ResourceManager.GetString("AppName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to No file selected.
         /// </summary>
         internal static string NoFileSelected {

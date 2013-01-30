@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CryptographyError" xml:space="preserve">
-    <value>Either key or initialization vector are incorrect or file is invalid</value>
+    <value>Either key is incorrect or file is invalid</value>
   </data>
   <data name="CryptographyKeyNull" xml:space="preserve">
-    <value>Key and IV cannot be null</value>
+    <value>Key can not be null</value>
   </data>
   <data name="FileInfoNull" xml:space="preserve">
-    <value>File info cannot be null</value>
+    <value>File info can not be null</value>
   </data>
 </root>

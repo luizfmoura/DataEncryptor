@@ -1,0 +1,7 @@
+P:\GitHub\personal-repo\DataEncryptor\Serializer\bin\Release\Serializer.dll
+P:\GitHub\personal-repo\DataEncryptor\Serializer\bin\Release\Serializer.pdb
+P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Release\CryptoUtil.csprojResolveAssemblyReference.cache
+P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Release\DataEncryptor.Resources.resources
+P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Release\CryptoUtil.csproj.GenerateResource.Cache
+P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Release\Serializer.dll
+P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Release\Serializer.pdb

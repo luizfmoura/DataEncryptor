@@ -13,8 +13,9 @@ P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\Serializer.dll
 P:\Visual Studio 2012\Projects\DataEncryptor\Serializer\obj\Debug\Serializer.pdb
 P:\GitHub\personal-repo\DataEncryptor\Serializer\bin\Debug\Serializer.dll
 P:\GitHub\personal-repo\DataEncryptor\Serializer\bin\Debug\Serializer.pdb
-P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Debug\CryptoUtil.csprojResolveAssemblyReference.cache
 P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Debug\DataEncryptor.Resources.resources
 P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Debug\CryptoUtil.csproj.GenerateResource.Cache
 P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Debug\Serializer.dll
 P:\GitHub\personal-repo\DataEncryptor\Serializer\obj\Debug\Serializer.pdb
+P:\GitHub\personal-repo\DataEncryptor\Serializer\bin\Debug\Serializer.dll.CodeAnalysisLog.xml
+P:\GitHub\personal-repo\DataEncryptor\Serializer\bin\Debug\Serializer.dll.lastcodeanalysissucceeded

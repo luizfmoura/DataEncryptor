@@ -1,0 +1,7 @@
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Release\UnitTests.dll
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Release\UnitTests.pdb
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Release\Serializer.dll
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\bin\Release\Serializer.pdb
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\obj\Release\UnitTests.csprojResolveAssemblyReference.cache
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\obj\Release\UnitTests.dll
+P:\GitHub\personal-repo\DataEncryptor\UnitTests\obj\Release\UnitTests.pdb

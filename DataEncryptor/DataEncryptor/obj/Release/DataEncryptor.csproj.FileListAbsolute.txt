@@ -1,0 +1,17 @@
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\DataEncryptor.exe.config
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\DataEncryptor.exe.manifest
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\DataEncryptor.application
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\DataEncryptor.exe
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\DataEncryptor.pdb
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\Serializer.dll
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\bin\Release\Serializer.pdb
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.csprojResolveAssemblyReference.cache
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.MainForm.resources
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.Properties.Resources.resources
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.Resources.resources
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.csproj.GenerateResource.Cache
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.TrustInfo.xml
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.exe.manifest
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.application
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.exe
+P:\GitHub\personal-repo\DataEncryptor\DataEncryptor\obj\Release\DataEncryptor.pdb
