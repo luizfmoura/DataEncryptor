@@ -155,7 +155,11 @@ namespace DataEncryptor
         private void LoadEntries(string fileName, CryptoKey crypto)
         {
             entries = Serializer.DeserializeFromFile<BindingList<Entry>>(fileName, crypto);
-            dataGridViewEntry.DataSource = entries;            
+            dataGridViewEntry.DataSource = entries;
+
+            dataGridViewEntry.Columns[0].MinimumWidth = 215;
+            dataGridViewEntry.Columns[1].MinimumWidth = 215;
+            dataGridViewEntry.Columns[2].MinimumWidth = 125;
         }
 
         private void CloseFile()
