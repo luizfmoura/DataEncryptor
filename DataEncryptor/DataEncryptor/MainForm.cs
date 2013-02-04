@@ -28,6 +28,12 @@ namespace DataEncryptor
 
         #region Events
 
+        private void passwordGenerationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formPasswordGeneration = new PasswordGenerationForm();
+            formPasswordGeneration.ShowDialog();
+        }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -198,5 +204,7 @@ namespace DataEncryptor
         }
 
         #endregion
+
+
     }
 }

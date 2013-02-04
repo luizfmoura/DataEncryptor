@@ -39,6 +39,8 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.passwordGenerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewEntry = new System.Windows.Forms.DataGridView();
             this.labelFileName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,6 +48,7 @@
             this.textBoxKey = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxFileName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEntry)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -54,10 +57,11 @@
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
+            this.menuToolStripMenuItem,
+            this.toolsToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(654, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(657, 24);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -124,6 +128,21 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.passwordGenerationToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // passwordGenerationToolStripMenuItem
+            // 
+            this.passwordGenerationToolStripMenuItem.Name = "passwordGenerationToolStripMenuItem";
+            this.passwordGenerationToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.passwordGenerationToolStripMenuItem.Text = "Password Generation";
+            this.passwordGenerationToolStripMenuItem.Click += new System.EventHandler(this.passwordGenerationToolStripMenuItem_Click);
             // 
             // dataGridViewEntry
             // 
@@ -198,11 +217,21 @@
             this.textBoxFileName.Size = new System.Drawing.Size(398, 20);
             this.textBoxFileName.TabIndex = 4;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 461);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(297, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Developed By: Luiz Fernando de Moura - All Rights Reserved";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 468);
+            this.ClientSize = new System.Drawing.Size(657, 483);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewEntry);
             this.Controls.Add(this.menuStrip2);
@@ -237,6 +266,9 @@
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem passwordGenerationToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
     }
 }
 
